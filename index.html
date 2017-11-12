@@ -13,19 +13,23 @@
     <header>
         <nav>
             <div class="container">
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#project">Projects</a></li>
-                    <li><a href="#certifications">Certifications</a></li>
-                    <li><a href="#internship">Internship</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+                <div class="nav">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#project">Projects</a></li>
+                        <li><a href="#certifications">Certifications</a></li>
+                        <li><a href="#internship">Internship</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <div class="btn">
+                        <span></span>
+                    </div>
+                </div>
             </div>
         </nav>
-        <div id="home">
-            
-        </div>
+
     </header>
 
     <div id="home" class="a1">
@@ -261,7 +265,7 @@
     <div id="contact" class="g7">
         <div class="container">
             <h1>Contact</h1>
-            <div class="sm-container">
+            <div class="container">
                 <div class="flex-container">
 
                     <!-- <div class="flex-item">
@@ -307,7 +311,7 @@
         </div>
     </div>
     <footer>
-        <div class="xsm-container">
+        <div class="container">
             <h3>Created By <a href="https://github.com/fredericoAlvesJS">Frederico Alves</a></h3>
             <div id="right"><h3>Made with love in London 2017</h3></div>
             
@@ -349,6 +353,18 @@
 src="https://code.jquery.com/jquery-2.2.4.min.js"
 integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
 crossorigin="anonymous"></script>
+
+<!-- //===== MENU HAMBURGER ======= -->
+<script>
+$(document).ready(function(){
+        $(".btn").click(function(){
+          $(".nav").toggleClass("active");
+          $(this).toggleClass("btn-slide");
+        });         
+     });
+     </script>
+<!-- //!===== MENU HAMBURGER ======= -->
+
 
 
     <script>
